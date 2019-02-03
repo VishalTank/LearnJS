@@ -1,6 +1,6 @@
 var magic = function() {
   return "Hi";
-}
+};
 
 var magic = () => "hi";
 
