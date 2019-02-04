@@ -40,10 +40,33 @@
 
     <script>
 
-        var btn = document.querySelector('button');
-        btn.onclick = function() {
+        /*var btn = document.querySelector('button');
+        btn.onclick = function () {
             displayMessage('danger!!', 'warning');
         };
+        */
+
+
+        var btn = document.querySelector('button');
+
+        function random(number) {
+            return Math.floor(Math.random() * (number + 1));
+        }
+        /*
+        btn.onclick = function () {
+            var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+            document.body.style.backgroundColor = rndCol;
+        }*/
+        
+        function bgChange(e) {
+            var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+            e.target.style.backgroundColor = rndCol;
+            console.log(e);
+        }
+
+        btn.addEventListener('click', bgChange);
+
+
 
         function displayMessage(msgText, msgType = 'chat') {
 
@@ -69,7 +92,7 @@
             if (msgType === 'warning') {
                 msg.style.backgroundImage = 'url(icons/warning.png)';
                 panel.style.backgroundColor = 'red';
-            } 
+            }
             else if (msgType === 'chat') {
                 msg.style.backgroundImage = 'url(icons/chat.png)';
                 panel.style.backgroundColor = 'aqua';
