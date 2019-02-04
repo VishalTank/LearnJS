@@ -1,5 +1,5 @@
 const customName = document.getElementById('customName');
-//const customName = document.querySelector('.QSvGEBI');
+//const customName = document.querySelector('.QSvsGEBI');
 const randomize = document.querySelector('.randomize');
 const story = document.querySelector('.story');
 
