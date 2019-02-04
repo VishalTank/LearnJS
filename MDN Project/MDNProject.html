@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Silly Story Generator</title>
+
+    <style>
+    body {
+    font-family: helvetica, sans-serif;
+    width: 350px;
+    }
+
+    label {
+    font-weight: bold;
+    }
+
+    div {
+    padding-bottom: 20px;
+    }
+
+    input[type="text"] {
+    padding: 5px;
+    width: 150px;
+    }
+
+    p {
+    background: #FFC125;
+    color: #5E2612;
+    padding: 10px;
+    visibility: hidden;
+    }
+    </style>
+</head>
+
+<body>
+    <div>
+        <label for="customName">Enter a custom name: </label>
+        <input id="customName" type="text" placeholder="">
+    </div>
+
+    <div>
+        <label for="us">US</label>
+        <input name="std" id="us" type="radio" value="uk" checked="">
+
+        <label for="uk">UK</label>
+        <input name="std" id="uk" type="radio" value="uk">
+    </div>
+
+    <div>
+        <button class="randomize">Generate random story</button>
+    </div>
+
+    <p class="story"></p>
+    <script src="MDNProject.js"></script>
+</body>
+
+</html>
